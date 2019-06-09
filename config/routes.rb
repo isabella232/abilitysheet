@@ -108,5 +108,5 @@ Rails.application.routes.draw do
     end
   end
 
-  mount Peek::Railtie => '/peek'
+  # mount Peek::Railtie => '/peek'
 end

@@ -30,7 +30,7 @@ html
   body
     .loading-container = image_tag('loading.gif')
     .uk-modal
-    - unless Rails.env.test?
+    /- unless Rails.env.test?
       = render 'peek/bar'
 
     - if current_user && current_user.logs.exists?

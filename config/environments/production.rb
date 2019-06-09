@@ -100,7 +100,7 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   routes.default_url_options = { host: ENV.fetch('RAILS_HOST') { 'sp12.iidx.app' } }
-  config.peek.adapter = :redis
+  # config.peek.adapter = :redis
 
   config.active_storage.service = :local
 end

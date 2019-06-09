@@ -3,9 +3,6 @@
 //= require activestorage
 //= require jquery-ui/ui/widgets/datepicker
 //= require jquery-ui/ui/i18n/datepicker-ja
-//= require peek
-//= require peek/views/performance_bar
-//= require peek/views/rblineprof
 //= require datatables-all/media/js/jquery.dataTables.min
 //= require datatables-all/media/js/dataTables.uikit.min
 //= require uikit/dist/js/uikit.min

@@ -20,6 +20,7 @@ class ApplicationController < ActionController::Base
   protected
 
   def peek_enabled?
+    return false
     Rails.env.development? ? true : current_user.try(:owner?)
   end
 
