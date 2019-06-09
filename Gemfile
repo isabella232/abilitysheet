@@ -11,6 +11,7 @@ gem 'coffee-rails'
 gem 'devise'
 gem 'dotenv-rails'
 gem 'draper'
+gem 'elastic-apm'
 gem 'font-awesome-rails'
 gem 'google-cloud-storage'
 # }}}

@@ -32,5 +32,6 @@ module Abilitysheet
     config.generators.test_framework = :rspec
 
     SLACK_URI = URI.parse(ENV['NOTIFY_SLACK_URL']) if ENV['NOTIFY_SLACK_URL']
+    config.elastic_apm.service_name = 'abilitysheet'
   end
 end

@@ -160,6 +160,9 @@ GEM
       activemodel-serializers-xml (>= 1.0)
       activesupport (>= 5.0)
       request_store (>= 1.0)
+    elastic-apm (2.8.1)
+      concurrent-ruby (~> 1.0)
+      http (>= 3.0)
     equalizer (0.0.11)
     erubi (1.8.0)
     et-orbi (1.2.0)
@@ -602,6 +605,7 @@ DEPENDENCIES
   devise
   dotenv-rails
   draper
+  elastic-apm
   factory_bot_rails
   font-awesome-rails
   google-cloud-storage

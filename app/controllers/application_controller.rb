@@ -7,6 +7,12 @@ class ApplicationController < ActionController::Base
   # refs: https://github.com/plataformatec/devise/pull/4033/files
   protect_from_forgery prepend: true
   before_action :configure_permitted_parameters, if: :devise_controller?
+  before_action do
+    if ENV['ENABLE_APM'] == 'true' && current_user
+      ElasticAPM.set_user(current_user)
+      ElasticAPM.set_tag(:iidxid, current_user.iidxid)
+    end
+  end
 
   rescue_from ActionController::RoutingError, ActiveRecord::RecordNotFound, with: :render_404
   rescue_from ArgumentError, with: :render_400
